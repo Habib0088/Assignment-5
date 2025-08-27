@@ -80,7 +80,7 @@ This Section will have layout as figma
 
 ### 4. Heart Icons
 
-- Clicking on the 💗 **heart icon** of any card will increase the count in the Navbar
+- Clicking on the 💗 **heart icon** of any card will increase the count in the Navbar   (✔🎂✔✔)
 
 ---
 

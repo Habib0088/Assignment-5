@@ -23,7 +23,7 @@
              <!-- nav right -->
               <div class="nav-right flex gap-4 items-center">
                 <div class="life flex gap-2 bg-[#41e9ff1a] px-7 py-2 rounded-2xl">
-                    <p>0</p>
+                    <p id="heart">0</p>
                     <div class="w-7"><img src="./assets/heart.png" alt="" class="w-8"></div>
                 </div>
                 <div class="coin flex gap-2 bg-[#41e9ff1a] px-7 py-2 rounded-2xl">
@@ -48,24 +48,24 @@
             <p class="text-xl text-white mb-4">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
         </section>
 
-        <!------------------- Service section  start here-------------------->
-        <section class="service-section grid grid-cols-12 p-6 bg-[#F5FFF6]">
+        <!------------------- Service(card) section  start here-------------------->
+        <section class="service-section grid grid-cols-12 p-6 bg-[#F5FFF6] gap-6">
             <!-- service Left section  -->
             <div class="service-left  col-span-9">
                 <div class="card-parent grid grid-cols-3 gap-6">
                     <!-- 1st card -->
                      <div class="card p-6 shadow bg-white">
                         <div class="first-line flex items-center justify-between ">
-                            <div class="w-12 mb-3"><img src="./assets/ambulance.png" alt="" class="bg-[#FFE3E2] p-2 rounded-xl"></div>
+                            <div class="w-12 mb-3"><img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] p-2 rounded-xl"></div>
                             <div><i class="fa-regular fa-heart text-[#5C5C5C]"></i></div>
                         </div>
-                        <p class="font-bold text-xl">Ambulance Service</p>
-                        <p class="mb-4 text-[#5C5C5C] ">Ambulance</p>
-                        <p class="font-bold text-2xl">1994-999999</p>
-                        <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-16 my-2">Health</p>
+                        <p class="font-bold text-md">National Emergency Number</p>
+                        <p class="mb-4 text-[#5C5C5C] ">National Emergency</p>
+                        <p class="font-bold text-2xl">999</p>
+                        <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-16 my-2">All</p>
                         <div class="last-line mt-4 flex flex-row gap-2">
                             <button class=" mr-2 w-full border border-gray-300 rounded-xl py-2 text-[#5C5C5C]"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                            <button class=" w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                            <button class="call w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                         </div>
 <!-- second btn -->
                      </div>
@@ -74,19 +74,35 @@
                             <div class="w-12 mb-3"><img src="./assets/ambulance.png" alt="" class="bg-[#FFE3E2] p-2 rounded-xl"></div>
                             <div><i class="fa-regular fa-heart text-[#5C5C5C]"></i></div>
                         </div>
-                        <p class="font-bold text-xl">Ambulance Service</p>
-                        <p class="mb-4 text-[#5C5C5C] ">Ambulance</p>
-                        <p class="font-bold text-2xl">1994-999999</p>
-                        <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-16 my-2">Health</p>
+                        <p class="font-bold text-xl">Police Helpline Number</p>
+                        <p class="mb-4 text-[#5C5C5C] ">Police</p>
+                        <p class="font-bold text-2xl">999</p>
+                        <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-16 my-2">Police</p>
                        <div class="last-line mt-4 flex flex-row gap-2">
                             <button class=" mr-2 w-full border border-gray-300 rounded-xl py-2 text-[#5C5C5C]"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                            <button class=" w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                            <button class="call w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                         </div>
 
                      </div>
                      <div class="card p-6 shadow bg-white">
                         <div class="first-line flex items-center justify-between ">
-                            <div class="w-12 mb-3"><img src="./assets/ambulance.png" alt="" class="bg-[#FFE3E2] p-2 rounded-xl"></div>
+                            <div class="w-12 mb-3"><img src="./assets/police.png" alt="" class="bg-[#FFE3E2] p-2 rounded-xl"></div>
+                            <div><i class="fa-regular fa-heart text-[#5C5C5C]"></i></div>
+                        </div>
+                        <p class="font-bold text-xl">Fire Service Number</p>
+                        <p class="mb-4 text-[#5C5C5C] ">Fire Service</p>
+                        <p class="font-bold text-2xl">999</p>
+                        <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-16 my-2">Fire</p>
+                        <div class="last-line mt-4 flex flex-row gap-2">
+                            <button class=" mr-2 w-full border border-gray-300 rounded-xl py-2 text-[#5C5C5C]"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                            <button class="call w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        </div>
+
+                     </div>
+                      <!-- Card 4 -->
+                     <div class="card p-6 shadow bg-white">
+                        <div class="first-line flex items-center justify-between ">
+                            <div class="w-12 mb-3"><img src="./assets/fire-service.png" alt="" class="bg-[#FFE3E2] p-2 rounded-xl"></div>
                             <div><i class="fa-regular fa-heart text-[#5C5C5C]"></i></div>
                         </div>
                         <p class="font-bold text-xl">Ambulance Service</p>
@@ -95,97 +111,83 @@
                         <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-16 my-2">Health</p>
                         <div class="last-line mt-4 flex flex-row gap-2">
                             <button class=" mr-2 w-full border border-gray-300 rounded-xl py-2 text-[#5C5C5C]"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                            <button class=" w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                            <button class="call w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                         </div>
 
                      </div>
+                    
                      <div class="card p-6 shadow bg-white">
                         <div class="first-line flex items-center justify-between ">
                             <div class="w-12 mb-3"><img src="./assets/ambulance.png" alt="" class="bg-[#FFE3E2] p-2 rounded-xl"></div>
                             <div><i class="fa-regular fa-heart text-[#5C5C5C]"></i></div>
                         </div>
-                        <p class="font-bold text-xl">Ambulance Service</p>
-                        <p class="mb-4 text-[#5C5C5C] ">Ambulance</p>
-                        <p class="font-bold text-2xl">1994-999999</p>
-                        <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-16 my-2">Health</p>
-                        <div class="last-line mt-4 flex flex-row gap-2">
-                            <button class=" mr-2 w-full border border-gray-300 rounded-xl py-2 text-[#5C5C5C]"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                            <button class=" w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
-                        </div>
-
-                     </div>
-                     <div class="card p-6 shadow bg-white">
-                        <div class="first-line flex items-center justify-between ">
-                            <div class="w-12 mb-3"><img src="./assets/ambulance.png" alt="" class="bg-[#FFE3E2] p-2 rounded-xl"></div>
-                            <div><i class="fa-regular fa-heart text-[#5C5C5C]"></i></div>
-                        </div>
-                        <p class="font-bold text-xl">Ambulance Service</p>
-                        <p class="mb-4 text-[#5C5C5C] ">Ambulance</p>
-                        <p class="font-bold text-2xl">1994-999999</p>
-                        <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-16 my-2">Health</p>
+                        <p class="font-bold text-xl">Women & Child Helpline</p>
+                        <p class="mb-4 text-[#5C5C5C] ">Women & Child Helpline</p>
+                        <p class="font-bold text-2xl">109</p>
+                        <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-16 my-2">Help</p>
                        <div class="last-line mt-4 flex flex-row gap-2">
                             <button class=" mr-2 w-full border border-gray-300 rounded-xl py-2 text-[#5C5C5C]"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                            <button class=" w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                            <button class="call w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                         </div>
 
                      </div>
                      <div class="card p-6 shadow bg-white">
                         <div class="first-line flex items-center justify-between ">
-                            <div class="w-12 mb-3"><img src="./assets/ambulance.png" alt="" class="bg-[#FFE3E2] p-2 rounded-xl"></div>
+                            <div class="w-12 mb-3"><img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] p-2 rounded-xl"></div>
                             <div><i class="fa-regular fa-heart text-[#5C5C5C]"></i></div>
                         </div>
-                        <p class="font-bold text-xl">Ambulance Service</p>
-                        <p class="mb-4 text-[#5C5C5C] ">Ambulance</p>
-                        <p class="font-bold text-2xl">1994-999999</p>
-                        <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-16 my-2">Health</p>
+                        <p class="font-bold text-xl">Anti-Corruption Helpline</p>
+                        <p class="mb-4 text-[#5C5C5C] ">Anti-Corruption</p>
+                        <p class="font-bold text-2xl">106</p>
+                        <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-16 my-2">Govt</p>
                       <div class="last-line mt-4 flex flex-row gap-2">
                             <button class=" mr-2 w-full border border-gray-300 rounded-xl py-2 text-[#5C5C5C]"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                            <button class=" w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                            <button class="call w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                         </div>
 
                      </div>
                      <div class="card p-6 shadow bg-white">
                         <div class="first-line flex items-center justify-between ">
-                            <div class="w-12 mb-3"><img src="./assets/ambulance.png" alt="" class="bg-[#FFE3E2] p-2 rounded-xl"></div>
+                            <div class="w-12 mb-3"><img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] p-2 rounded-xl"></div>
                             <div><i class="fa-regular fa-heart text-[#5C5C5C]"></i></div>
                         </div>
-                        <p class="font-bold text-xl">Ambulance Service</p>
-                        <p class="mb-4 text-[#5C5C5C] ">Ambulance</p>
-                        <p class="font-bold text-2xl">1994-999999</p>
-                        <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-16 my-2">Health</p>
+                        <p class="font-bold text-xl">Electricity Helpline</p>
+                        <p class="mb-4 text-[#5C5C5C] ">Electricity Outage</p>
+                        <p class="font-bold text-2xl">16216</p>
+                        <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-16 my-2">Electricity</p>
                        <div class="last-line mt-4 flex flex-row gap-2">
                             <button class=" mr-2 w-full border border-gray-300 rounded-xl py-2 text-[#5C5C5C]"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                            <button class=" w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                            <button class="call w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                         </div>
 
                      </div>
                      <div class="card p-6 shadow bg-white">
                         <div class="first-line flex items-center justify-between ">
-                            <div class="w-12 mb-3"><img src="./assets/ambulance.png" alt="" class="bg-[#FFE3E2] p-2 rounded-xl"></div>
+                            <div class="w-12 mb-3"><img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] p-2 rounded-xl"></div>
                             <div><i class="fa-regular fa-heart text-[#5C5C5C]"></i></div>
                         </div>
-                        <p class="font-bold text-xl">Ambulance Service</p>
-                        <p class="mb-4 text-[#5C5C5C] ">Ambulance</p>
-                        <p class="font-bold text-2xl">1994-999999</p>
-                        <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-16 my-2">Health</p>
+                        <p class="font-bold text-xl">Brac Helpline</p>
+                        <p class="mb-4 text-[#5C5C5C] ">Brac</p>
+                        <p class="font-bold text-2xl">16445</p>
+                        <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-16 my-2">NGO</p>
                     <div class="last-line mt-4 flex flex-row gap-2">
                             <button class=" mr-2 w-full border border-gray-300 rounded-xl py-2 text-[#5C5C5C]"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                            <button class=" w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                            <button class="call w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                         </div>
 
                      </div>
                      <div class="card p-6 shadow bg-white">
                         <div class="first-line flex items-center justify-between ">
-                            <div class="w-12 mb-3"><img src="./assets/ambulance.png" alt="" class="bg-[#FFE3E2] p-2 rounded-xl"></div>
+                            <div class="w-12 mb-3"><img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] p-2 rounded-xl"></div>
                             <div><i class="fa-regular fa-heart text-[#5C5C5C]"></i></div>
                         </div>
-                        <p class="font-bold text-xl">Ambulance Service</p>
-                        <p class="mb-4 text-[#5C5C5C] ">Ambulance</p>
-                        <p class="font-bold text-2xl">1994-999999</p>
-                        <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-16 my-2">Health</p>
+                        <p class="font-bold text-xl">Bangladesh Railway Helpline </p>
+                        <p class="mb-4 text-[#5C5C5C] ">Bangladesh Railway</p>
+                        <p class="font-bold text-2xl">163</p>
+                        <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-16 my-2">Travel</p>
                         <div class="last-line mt-4 flex flex-row gap-2">
                             <button class=" mr-2 w-full border border-gray-300 rounded-xl py-2 text-[#5C5C5C]"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                            <button class=" w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                            <button class="call w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                         </div>
 
                      </div>
@@ -194,10 +196,31 @@
 
 
             <!-- service Right section  -->
-            <div class="service-right col-span-3"></div>
+            <div class="service-right col-span-3 p-4 bg-white rounded-2xl">
+
+                <div class="upper-line flex justify-between items-center">
+                    <div class="callhistory-title">
+                        <h3 class="history-btn  font-bold text-xl">Call History</h3>
+                    </div>
+                    <button class="bg-[#00A63E] px-9 py-3 rounded-3xl text-white">Clear</button>
+                </div>
+                <!-- History list area hidden  -->
+                 <div class="area flex justify-between items-center bg-[#FAFAFA] my-4 p-2 rounded-xl">
+                    <div class="area-left">
+                        <p class="font-bold text-sm" >Fire Service Number</p>
+                        <p class="text-[#5C5C5C]">999</p>
+                    </div>
+                    <div class="area-right">
+                        <p class="text-sm">11:36:58 AM</p>
+                    </div>
+                 </div>
+                 
+            </div>
 
         </section>
 
     </main>
+
+    <script src="./script/index.js"></script>
 </body>
 </html>
