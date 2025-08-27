@@ -22,7 +22,7 @@ for(let call of calls){
         let defaultCoin=document.getElementById('coin').innerText;
         let defaultCoinNumber=Number(defaultCoin);
         if(defaultCoinNumber >= 20){
-            alert('you are calling');
+            
                 let newCoin=defaultCoinNumber - 20;
         document.getElementById('coin').innerText=newCoin;
             // Target card info for add into history list
@@ -30,7 +30,7 @@ for(let call of calls){
             let serviceNumber=call.parentNode.parentNode.children[3].innerText;
             let time=new Date().toLocaleTimeString();
             
-            
+            alert(' Calling to '+ name+' '+serviceNumber+'...');
             
             // Target card info for add into history list
         let historyArea=document.getElementById('history-list-area');
@@ -54,10 +54,17 @@ for(let call of calls){
 
 
         else{
-                alert('You Have No Enough Coin For Making A Call');
+                alert('You Have No Enough Coin For Making A Call.Need At Least 20 Coins For Calling');
                 return
             }
     
     })
     
 }
+// Clear button 
+let clearBtn=document.getElementById('clear');
+clearBtn.addEventListener('click', function(){
+    let listArea=document.getElementById('history-list-area');
+    listArea.innerHTML=' '
+    
+})
