@@ -1,5 +1,5 @@
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
-        answer:::
+ answer:::
         getElementById('id') returns one element of that id .
 
         getElementsByClassName('class') gives HTML collection of all elements of that class .
