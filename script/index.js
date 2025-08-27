@@ -30,7 +30,7 @@ for(let call of calls){
             let serviceNumber=call.parentNode.parentNode.children[3].innerText;
             let time=new Date().toLocaleTimeString();
             
-            alert(' Calling to '+ name+' '+serviceNumber+'...');
+            alert('📞'+' Calling '+ name+' '+serviceNumber+'...');
             
             // Target card info for add into history list
         let historyArea=document.getElementById('history-list-area');
@@ -74,7 +74,9 @@ clearBtn.addEventListener('click', function(){
 let copybtns=document.getElementsByClassName('copy');
 for(let copybtn of copybtns){
     copybtn.addEventListener('click', function(){
-        alert('Copied')
+
+        let copyNumber=document.getElementById('')
+        
         let copyDefault=document.getElementById('totalcopy').innerText;
         let copyDefaultNumber=Number(copyDefault);
         let increasedNumber= copyDefaultNumber+1;
@@ -82,9 +84,10 @@ for(let copybtn of copybtns){
 
         let copiedNumber=copybtn.parentNode.parentNode.children[3].innerText;
 
+
         navigator.clipboard.writeText(copiedNumber);
 
-
+        alert('Copied Number is : '+ copiedNumber)
         
     });
     
