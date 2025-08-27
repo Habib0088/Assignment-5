@@ -14,14 +14,14 @@
     <!------------ Header section Start ---------------- -->
     <header>
         
-        <div class="main-nav flex justify-between px-10 py-3 items-center ">
+        <div class="main-nav  md:flex flex-row justify-between px-10 py-3 items-center ">
             <!-- nav left -->
-             <div class="nav-left flex">
-                <div><img src="./assets/logo.png" alt="Logo" class="w-12"></div>
-                <h1 class="text-[#006747] font-bold">Emergency <br> Service</h1>
+             <div class="nav-left flex justify-center mb-2 md:justify-start mb-0">
+                <div class="text-center md:text-left"><img src="./assets/logo.png" alt="Logo" class="w-12"></div>
+                <h1 class="text-[#006747] font-bold ml-2">Emergency <br> Service</h1>
              </div>
              <!-- nav right -->
-              <div class="nav-right flex gap-4 items-center">
+              <div class="nav-right flex gap-4 justify-center md:justify-end">
                 <div class="life flex gap-2 bg-[#41e9ff1a] px-7 py-2 rounded-2xl">
                     <p id="heart">0</p>
                     <div class="w-7"><img src="./assets/heart.png" alt="" class="w-8"></div>
@@ -31,7 +31,7 @@
                    <div class="w-7"> <img src="./assets/coin.png" alt="" class="w-8"></div>
                 </div>
                 <div class=" flex gap-2 bg-[#00A63E] px-7 py-2 rounded-2xl text-white">
-                    <p id="totalcopy">2</p>
+                    <p id="totalcopy">0</p>
                     <p>Copy</p>
                 </div>
               </div>
@@ -49,10 +49,10 @@
         </section>
 
         <!------------------- Service(card) section  start here-------------------->
-        <section class="service-section grid grid-cols-12 p-6 bg-[#F5FFF6] gap-6">
+        <section class="service-section md:grid grid-cols-12 p-6 bg-[#F5FFF6] gap-6">
             <!-- service Left section  -->
             <div class="service-left  col-span-9">
-                <div class="card-parent grid grid-cols-3 gap-6">
+                <div class="card-parent col-span-12 md:grid grid-cols-3 gap-6">
                     <!-- 1st card -->
                      <div class="card p-6 shadow bg-white">
                         <div class="first-line flex items-center justify-between ">
@@ -154,7 +154,7 @@
                         <p class="font-bold text-xl">Electricity Helpline</p>
                         <p class="mb-4 text-[#5C5C5C] ">Electricity Outage</p>
                         <p class="font-bold text-2xl">16216</p>
-                        <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-16 my-2">Electricity</p>
+                        <p class="text-center p-1 rounded-2xl bg-[#e2e2e2] text-[#5C5C5C] w-20 my-2">Electricity</p>
                        <div class="last-line mt-4 flex flex-row gap-2">
                             <button class="copy mr-2 w-full border border-gray-300 rounded-xl py-2 text-[#5C5C5C]"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
                             <button class="call w-full bg-[#00A63E] text-white py-2 rounded-xl"><i class="fa-solid fa-phone mr-2"></i>Call</button>
@@ -196,11 +196,11 @@
 
 
             <!-- service Right section  -->
-            <div class="service-right col-span-3 p-4 bg-white rounded-2xl">
+            <div class="service-right col-span-12 md md:col-span-3 p-4 bg-white rounded-2xl">
 
                 <div class="upper-line flex justify-between items-center">
                     <div class="callhistory-title">
-                        <h3 class="history-btn  font-bold text-xl">Call History</h3>
+                        <h3 class="history-btn  font-bold text-xl"><i class="fa-regular fa-clock text-[#5C5C5C]"></i> Call History</h3>
                     </div>
                     <button class="bg-[#00A63E] px-9 py-3 rounded-3xl text-white" id="clear">Clear</button>
                 </div>
