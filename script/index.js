@@ -1,4 +1,4 @@
-// Increase Heart START Here
+//1---------- Increase Heart START Here
 let hearts=document.getElementsByClassName('fa-heart');
 for(let heart of hearts){
     heart.addEventListener('click', function(){
@@ -13,7 +13,7 @@ for(let heart of hearts){
 
 }
 // Increase Heart End Here
-// Call Coin Start Area
+// 2----------- Call Coin Start Area
 
 let calls=document.getElementsByClassName('call');
 for(let call of calls){
@@ -61,10 +61,31 @@ for(let call of calls){
     })
     
 }
-// Clear button 
+//3---------- Clear button 
 let clearBtn=document.getElementById('clear');
 clearBtn.addEventListener('click', function(){
     let listArea=document.getElementById('history-list-area');
     listArea.innerHTML=' '
-    
+
 })
+
+
+// 4------- Copy button 
+let copybtns=document.getElementsByClassName('copy');
+for(let copybtn of copybtns){
+    copybtn.addEventListener('click', function(){
+        alert('Copied')
+        let copyDefault=document.getElementById('totalcopy').innerText;
+        let copyDefaultNumber=Number(copyDefault);
+        let increasedNumber= copyDefaultNumber+1;
+        document.getElementById('totalcopy').innerText=increasedNumber
+
+        let copiedNumber=copybtn.parentNode.parentNode.children[3].innerText;
+
+        navigator.clipboard.writeText(copiedNumber);
+
+
+        
+    });
+    
+}
